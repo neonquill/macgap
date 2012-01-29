@@ -8,6 +8,7 @@
 @class Path;
 @class App;
 @class Window;
+@class File;
 
 @class WindowController;
 
@@ -19,6 +20,7 @@
     Path* path;
     App* app;
     Window* window;
+    File* file;
 }
 
 
@@ -30,6 +32,7 @@
 @property (nonatomic, retain) Path* path;
 @property (nonatomic, retain) App* app;
 @property (nonatomic, retain) Window* window;
+@property (nonatomic, retain) File* file;
 
 @property (nonatomic, retain) WindowController *requestedWindow;
 
