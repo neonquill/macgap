@@ -106,6 +106,10 @@ First you can define a refresh tag in `index.html`, which will immediately forwa
 
 Then use [HTML5 offline APIs](http://www.w3.org/TR/html5/offline.html) to cache your application locally. The first time your application launches, it'll download all the remote resources for use offline. Then during subsequent launches the locally cached resources will be used, and the application will fully function offline. If your remote application changes, then the cache manifest will be updated and application re-cached.
 
+##Developer mode
+
+Developer mode can be enabled by editing the preferences file in ~/Library/Preferences/com.MacGap.plist.  Changing the key 'developer' to YES will allow you to open the developer pane by right-clicking in the window and choosing 'Inspect Element.'
+
 ##Attributes
 
 MacGap was forked/ported from Phonegap-mac. It's under the same license (MIT).
