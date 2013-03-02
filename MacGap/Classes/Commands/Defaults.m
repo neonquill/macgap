@@ -11,9 +11,15 @@
 }
 
 // Look up an arbitrary key queried from javascript.
+// http://www.cimgf.com/2008/04/15/cocoa-tutorial-get-the-most-out-of-key-value-coding-and-observing/
 - (id) valueForUndefinedKey:(NSString*) key {
     id value = [self.userDefaults objectForKey:key];
     return value;
+}
+
+// Set an arbitrary key.
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
+    [self.userDefaults setValue:value forKey:key];
 }
 
 // Apparently this has to be defined for valueForUndefinedKey to work.
