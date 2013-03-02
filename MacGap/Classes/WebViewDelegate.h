@@ -9,6 +9,7 @@
 @class App;
 @class Window;
 @class File;
+@class Defaults;
 
 @class WindowController;
 
@@ -21,6 +22,7 @@
     App* app;
     Window* window;
     File* file;
+    Defaults* defaults;
 }
 
 
@@ -33,6 +35,7 @@
 @property (nonatomic, retain) App* app;
 @property (nonatomic, retain) Window* window;
 @property (nonatomic, retain) File* file;
+@property (nonatomic, retain) Defaults *defaults;
 
 @property (nonatomic, retain) WindowController *requestedWindow;
 

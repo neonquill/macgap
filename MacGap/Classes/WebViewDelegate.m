@@ -7,6 +7,7 @@
 #import "App.h"
 #import "Window.h"
 #import "File.h"
+#import "Defaults.h"
 #import "WindowController.h"
 
 #define MUTABLE_ARRAY_START_SIZE 10
@@ -21,6 +22,7 @@
 @synthesize app;
 @synthesize window;
 @synthesize file;
+@synthesize defaults;
 @synthesize requestedWindow;
 
 - (void) webView:(WebView*)webView didClearWindowObject:(WebScriptObject*)windowScriptObject forFrame:(WebFrame *)frame
@@ -41,7 +43,10 @@
     if (self.file == nil) {
         self.file = [[File alloc] initWithWebView:webView];
     }
-    
+    if (self.defaults == nil) {
+        self.defaults = [Defaults new];
+    }
+
     [windowScriptObject setValue:self forKey:kWebScriptNamespace];
 }
 

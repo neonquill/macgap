@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1495814F15C15CCC00E1CFE5 /* Notice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1495814E15C15CCC00E1CFE5 /* Notice.m */; };
+		3641CCDC16E284F700C34144 /* Defaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3641CCDB16E284F700C34144 /* Defaults.m */; };
 		88746BEE14CCA435001E160E /* JSEventHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88746BED14CCA435001E160E /* JSEventHelper.m */; };
 		88C0646014BDE10A00E4BCE2 /* Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 88C0645F14BDE10A00E4BCE2 /* Window.m */; };
 		88C0646614BDEC5800E4BCE2 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88C0646414BDEC5800E4BCE2 /* Window.xib */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		1495814D15C15CCC00E1CFE5 /* Notice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Notice.h; path = Classes/Commands/Notice.h; sourceTree = "<group>"; };
 		1495814E15C15CCC00E1CFE5 /* Notice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Notice.m; path = Classes/Commands/Notice.m; sourceTree = "<group>"; };
+		3641CCDA16E284F700C34144 /* Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defaults.h; path = Classes/Commands/Defaults.h; sourceTree = "<group>"; };
+		3641CCDB16E284F700C34144 /* Defaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Defaults.m; path = Classes/Commands/Defaults.m; sourceTree = "<group>"; };
 		88746BEC14CCA435001E160E /* JSEventHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSEventHelper.h; path = Classes/JSEventHelper.h; sourceTree = "<group>"; };
 		88746BED14CCA435001E160E /* JSEventHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSEventHelper.m; path = Classes/JSEventHelper.m; sourceTree = "<group>"; };
 		88C0645E14BDE10A00E4BCE2 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Window.h; path = Classes/Window.h; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 		FA3250E114BA87DD00BF0781 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				3641CCDA16E284F700C34144 /* Defaults.h */,
+				3641CCDB16E284F700C34144 /* Defaults.m */,
 				1495814D15C15CCC00E1CFE5 /* Notice.h */,
 				1495814E15C15CCC00E1CFE5 /* Notice.m */,
 				FA3250CA14BA860800BF0781 /* Dock.h */,
@@ -303,6 +308,7 @@
 				88746BEE14CCA435001E160E /* JSEventHelper.m in Sources */,
 				1495814F15C15CCC00E1CFE5 /* Notice.m in Sources */,
 				88CAD87714D3C6A800B45DB2 /* File.m in Sources */,
+				3641CCDC16E284F700C34144 /* Defaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
