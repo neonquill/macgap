@@ -10,9 +10,16 @@
     return self;
 }
 
+// Look up an arbitrary key queried from javascript.
+- (id) valueForUndefinedKey:(NSString*) key {
+    id value = [self.userDefaults objectForKey:key];
+    return value;
+}
 
-- (NSData *)get:(NSString*)key {
-    return [self.userDefaults objectForKey:key];
+// Apparently this has to be defined for valueForUndefinedKey to work.
+// https://lists.webkit.org/pipermail/webkit-dev/2009-November/010567.html
+- (id)invokeUndefinedMethodFromWebScript:(NSString *)name withArguments:(NSArray *)args {
+    return nil;
 }
 
 #pragma mark WebScripting Protocol
@@ -21,17 +28,6 @@
 + (BOOL) isSelectorExcludedFromWebScript:(SEL)selector
 {
     return NO;
-}
-
-+ (NSString*) webScriptNameForSelector:(SEL)selector
-{
-	id	result = nil;
-
-	if (selector == @selector(get:)) {
-		result = @"get";
-    }
-
-	return result;
 }
 
 // right now exclude all properties (eg keys)
