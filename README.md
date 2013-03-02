@@ -122,6 +122,14 @@ Events:
     //Mac OS X on sleep event.
     document.addEventListener('sleep', function(){console.log('Sleep!!')}, true);
 
+User Defaults:
+
+    // Get user default.
+    value = macgap.defaults.foo
+
+    // Set user default.
+    macgap.defaults.foo = 'Hello World!'
+
 ##Offline Patterns
 
 Desktop apps load immediately and work offline, whilst web apps have the advantage of being easily updated and remotely managed. MacGap gives you the best of both worlds via HTML5's offline APIs.
