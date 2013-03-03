@@ -72,7 +72,7 @@
     NSString * result;
     if (outputType == TEXT) {
         //If file's output is not escaped it results in a JavaScript EOF error
-        result = [NSString stringWithFormat:@"e.result=decodeURIComponent('%@')",
+        result = [NSString stringWithFormat:@"e.result=decodeURIComponent(\"%@\")",
                              [fileOutput stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding]];        
     }else if(outputType == BASE64){
         result = [NSString stringWithFormat:@"e.result='%@'",fileOutput];
